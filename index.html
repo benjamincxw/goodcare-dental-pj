@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goodcare Dental PJ — General Dentist, Braces &amp; Implants in Petaling Jaya</title>
+<meta name="description" content="Goodcare Dental PJ, Mayang Plaza SS26. Open daily including nights. 100% recommended. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --bg-alt:#F2FAF8;
+    --bg-panel:#F7FBFA;
+    --ink:#0F332E;
+    --ink-soft:#1B4A42;
+    --mint:#2FAE9A;
+    --mint-bright:#3FCBB3;
+    --mint-pale:#DFF5F0;
+    --text-muted:#5C7A75;
+    --charcoal:#1C2624;
+    --line:#E3EDEA;
+    --shadow: 0 20px 50px -25px rgba(15,51,46,0.18);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--charcoal);
+    background:var(--bg);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces', serif;
+    color:var(--ink);
+    line-height:1.14;
+    font-weight:500;
+  }
+  a{text-decoration:none; color:inherit;}
+  ul{list-style:none;}
+  img,svg{display:block; max-width:100%;}
+  .wrap{ max-width:1160px; margin:0 auto; padding:0 28px; }
+  section{padding:108px 0;}
+  @media(max-width:768px){ section{padding:70px 0;} }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:15px 28px; border-radius:100px;
+    font-weight:600; font-size:15.5px; font-family:'Inter',sans-serif;
+    border:1.5px solid transparent; cursor:pointer;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{ background:var(--mint); color:#fff; box-shadow:0 16px 34px -14px rgba(47,174,154,0.5); }
+  .btn-primary:hover{ background:var(--mint-bright); transform:translateY(-2px); }
+  .btn-ghost{ background:transparent; color:var(--ink); border-color:var(--line); }
+  .btn-ghost:hover{ border-color:var(--mint); color:var(--mint); transform:translateY(-2px); }
+  .btn-light{ background:#fff; color:var(--ink); }
+  .btn-light:hover{ transform:translateY(-2px); box-shadow:var(--shadow); }
+  .btn svg{ width:19px; height:19px; flex-shrink:0; }
+
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:rgba(255,255,255,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s ease, box-shadow .3s ease;
+  }
+  header.scrolled{ border-bottom:1px solid var(--line); box-shadow:0 4px 20px rgba(15,51,46,0.05); }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 28px; max-width:1160px; margin:0 auto;
+  }
+  .logo{ display:flex; align-items:center; gap:10px; line-height:1.1; }
+  .logo-text{ display:flex; flex-direction:column; line-height:1.1; }
+  .logo-mark{ width:30px; height:34px; flex-shrink:0; }
+  .logo-text strong{ font-family:'Fraunces', serif; font-size:19px; font-weight:600; color:var(--ink); }
+  .logo-text span{ font-size:11px; color:var(--mint); letter-spacing:.05em; margin-top:2px; }
+  nav.links{ display:flex; gap:32px; }
+  nav.links a{ font-size:14.5px; font-weight:500; color:var(--charcoal); position:relative; padding:4px 0; }
+  nav.links a::after{
+    content:''; position:absolute; left:0; bottom:-2px; width:0; height:2px;
+    background:var(--mint); transition:width .25s ease;
+  }
+  nav.links a:hover::after{ width:100%; }
+  .header-cta{ display:flex; align-items:center; gap:14px; }
+  @media(max-width:860px){
+    nav.links{ display:none; }
+    .header-cta .btn-ghost{ display:none; }
+  }
+
+  .hero{ padding:164px 0 84px; position:relative; overflow:hidden; }
+  .hero .wrap{ display:grid; grid-template-columns:1fr 0.92fr; gap:48px; align-items:center; }
+  @media(max-width:940px){ .hero .wrap{ grid-template-columns:1fr; } .hero{ padding-top:132px; } }
+
+  .eyebrow-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--mint-pale); border:1px solid #C9EBE3;
+    padding:7px 16px 7px 8px; border-radius:100px;
+    font-size:13px; font-weight:600; color:var(--ink); margin-bottom:26px;
+  }
+  .eyebrow-badge .stars{ color:#F5A524; letter-spacing:1px; font-size:13px; }
+  .eyebrow-badge .pip{
+    background:var(--mint); color:#fff; width:20px; height:20px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700;
+  }
+  .hero h1{ font-size:clamp(32px, 4.4vw, 54px); max-width:560px; letter-spacing:-0.01em; }
+  .hero h1 .accent{ color:var(--mint); }
+  .hero p.lead{ margin-top:22px; font-size:17px; color:var(--text-muted); max-width:460px; }
+  .hero .cta-row{ margin-top:32px; display:flex; gap:14px; flex-wrap:wrap; }
+  .hero .micro-note{
+    margin-top:22px; font-size:13px; color:var(--text-muted);
+    display:flex; align-items:center; gap:8px;
+  }
+  .hero .micro-note svg{ width:15px; height:15px; color:var(--mint); }
+
+  .hero-photo{
+    position:relative; border-radius:24px; overflow:hidden; aspect-ratio:4/5;
+    background:linear-gradient(155deg,#EAFBF7 0%, #DDF3ED 55%, #CDECE3 100%);
+    border:1px solid #D3EEE6;
+    box-shadow:var(--shadow);
+  }
+  .hero-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+  .trust-strip{ background:var(--ink); }
+  .trust-strip .wrap{ display:grid; grid-template-columns:repeat(4,1fr); padding:0; }
+  .trust-item{ padding:32px 20px; text-align:center; border-right:1px solid rgba(255,255,255,0.1); }
+  .trust-item:last-child{ border-right:none; }
+  .trust-item .num{ font-family:'Fraunces', serif; font-size:27px; color:var(--mint-bright); font-weight:600; }
+  .trust-item .lbl{ font-size:12px; color:#BFDDD5; margin-top:6px; }
+  @media(max-width:700px){
+    .trust-strip .wrap{ grid-template-columns:repeat(2,1fr); }
+    .trust-item{ border-bottom:1px solid rgba(255,255,255,0.1); }
+  }
+
+  .section-head{ max-width:600px; margin-bottom:52px; }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+  .section-head h2{ font-size:clamp(27px,3.2vw,38px); }
+  .section-head p{ margin-top:14px; color:var(--text-muted); font-size:16px; }
+
+  .about{ background:var(--bg-alt); }
+  .about .wrap{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:70px; align-items:start; }
+  @media(max-width:860px){ .about .wrap{ grid-template-columns:1fr; gap:34px; } }
+  .about-copy p{ color:var(--charcoal); font-size:15.5px; margin-bottom:16px; }
+  .about-copy p:last-child{ margin-bottom:0; }
+  .locate-line{
+    display:flex; gap:10px; align-items:flex-start; margin-top:26px;
+    font-size:14.5px; color:var(--ink-soft); font-weight:500;
+  }
+  .locate-line svg{ width:18px; height:18px; flex-shrink:0; margin-top:2px; color:var(--mint); }
+
+  .feature-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media(max-width:520px){ .feature-grid{ grid-template-columns:1fr; } }
+  .feature-card{
+    background:#fff; border:1px solid var(--line); border-radius:16px; padding:24px 22px;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .feature-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow); }
+  .feature-card .ic{
+    width:38px; height:38px; border-radius:10px; background:var(--mint-pale); color:var(--mint);
+    display:flex; align-items:center; justify-content:center; margin-bottom:14px;
+  }
+  .feature-card .ic svg{ width:20px; height:20px; }
+  .feature-card h4{ font-size:16px; margin-bottom:5px; font-weight:600; color:var(--ink); }
+  .feature-card p{ font-size:13.5px; color:var(--text-muted); }
+
+  .services-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line); border-radius:20px; overflow:hidden;
+  }
+  @media(max-width:900px){ .services-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media(max-width:520px){ .services-grid{ grid-template-columns:1fr; } }
+  .service-tile{ background:#fff; padding:32px 24px; transition:background .3s ease; }
+  .service-tile:hover{ background:var(--bg-alt); }
+  .service-tile .ic{ width:34px; height:34px; color:var(--mint); margin-bottom:16px; }
+  .service-tile .ic svg{ width:100%; height:100%; }
+  .service-tile h4{ font-size:15.5px; font-weight:600; color:var(--ink); margin-bottom:6px; }
+  .service-tile p{ font-size:13px; color:var(--text-muted); }
+
+  .doctors{ background:var(--bg-alt); }
+  .doctor-grid{ display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+  @media(max-width:760px){ .doctor-grid{ grid-template-columns:1fr; } }
+  .doctor-card{
+    background:#fff; border-radius:20px; padding:34px 30px; border:1px solid var(--line);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .doctor-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow); }
+  .doctor-avatar{
+    width:64px; height:64px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif; font-size:22px; font-weight:600; color:#fff; margin-bottom:20px;
+    background:linear-gradient(135deg,var(--mint-bright),var(--mint));
+  }
+  .doctor-card h3{ font-size:21px; margin-bottom:4px; }
+  .doctor-card .role{ font-size:13px; color:var(--mint); font-weight:600; margin-bottom:15px; }
+  .doctor-card p.bio{ font-size:14.5px; color:var(--charcoal); }
+  .doctor-tags{ display:flex; gap:8px; flex-wrap:wrap; margin-top:18px; }
+  .doctor-tags span{
+    font-size:12px; background:var(--mint-pale); color:var(--ink-soft);
+    padding:6px 12px; border-radius:100px; font-weight:500;
+  }
+
+  .review-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media(max-width:900px){ .review-grid{ grid-template-columns:1fr 1fr; } }
+  @media(max-width:600px){ .review-grid{ grid-template-columns:1fr; } }
+  .review-card{
+    background:#fff; border:1px solid var(--line); border-radius:16px; padding:26px 24px;
+    display:flex; flex-direction:column; gap:15px;
+  }
+  .review-stars{ color:#F5A524; font-size:14px; letter-spacing:2px; }
+  .review-card p{ font-size:14.5px; color:var(--charcoal); flex-grow:1; }
+  .review-who{ display:flex; align-items:center; gap:10px; font-size:13px; color:var(--text-muted); font-weight:600; }
+  .review-who .dot{
+    width:30px; height:30px; border-radius:50%; background:var(--mint-pale); color:var(--mint);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces',serif; font-size:12px; font-weight:600;
+  }
+  .review-source{ margin-top:36px; text-align:center; }
+  .review-source a{
+    display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:var(--ink);
+    border-bottom:1.5px solid var(--mint); padding-bottom:2px;
+  }
+
+  .location .wrap{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:40px; align-items:stretch; }
+  @media(max-width:860px){ .location .wrap{ grid-template-columns:1fr; } }
+  .loc-card{
+    background:var(--ink); color:#fff; border-radius:20px; padding:38px 32px;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  .loc-card h3{ color:#fff; font-size:23px; margin-bottom:22px; }
+  .loc-row{ display:flex; gap:14px; align-items:flex-start; margin-bottom:20px; font-size:14.5px; color:#CDE6DF; }
+  .loc-row svg{ width:19px; height:19px; flex-shrink:0; margin-top:2px; color:var(--mint-bright); }
+  .loc-row strong{ display:block; color:#fff; font-size:12.5px; margin-bottom:3px; font-weight:600; }
+  .map-frame{ border-radius:20px; overflow:hidden; border:1px solid var(--line); min-height:340px; }
+  .map-frame iframe{ width:100%; height:100%; min-height:340px; border:0; display:block; }
+
+  .final-cta{
+    background:linear-gradient(135deg, var(--mint) 0%, #21998A 100%);
+    color:#fff; text-align:center; position:relative; overflow:hidden;
+  }
+  .final-cta h2{ color:#fff; font-size:clamp(27px,3.8vw,40px); max-width:600px; margin:0 auto; }
+  .final-cta p{ color:#E3F7F1; margin-top:16px; font-size:16px; }
+  .final-cta .cta-row{ margin-top:32px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .final-cta .btn-ghost{ color:#fff; border-color:rgba(255,255,255,0.4); }
+  .final-cta .btn-ghost:hover{ border-color:#fff; color:#fff; }
+
+  footer{ padding:48px 0 30px; }
+  .footer-inner{
+    display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px;
+    border-top:1px solid var(--line); padding-top:32px;
+  }
+  .footer-inner .logo-text strong{ font-size:17px; }
+  .footer-links{ display:flex; gap:24px; flex-wrap:wrap; }
+  .footer-links a{ font-size:13.5px; color:var(--text-muted); font-weight:500; }
+  .footer-links a:hover{ color:var(--mint); }
+  .footer-bottom{
+    margin-top:28px; font-size:12px; color:#8EA9A2;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+
+  .float-wa{
+    position:fixed; bottom:26px; right:26px; z-index:200;
+    width:58px; height:58px; border-radius:50%; background:#25D366;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 14px 32px -10px rgba(37,211,102,0.6);
+    transition:transform .25s ease;
+  }
+  .float-wa:hover{ transform:scale(1.08); }
+  .float-wa svg{ width:28px; height:28px; color:#fff; }
+  .float-wa .ring{
+    position:absolute; width:58px; height:58px; border-radius:50%;
+    border:2px solid #25D366; animation:pulse-ring 2.2s ease-out infinite;
+  }
+  @keyframes pulse-ring{ 0%{ transform:scale(1); opacity:.7; } 100%{ transform:scale(1.7); opacity:0; } }
+
+  .reveal{ opacity:0; transform:translateY(20px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in-view{ opacity:1; transform:translateY(0); }
+  .reveal-stagger > *{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal-stagger.in-view > *{ opacity:1; transform:translateY(0); }
+  .reveal-stagger.in-view > *:nth-child(1){ transition-delay:.05s; }
+  .reveal-stagger.in-view > *:nth-child(2){ transition-delay:.11s; }
+  .reveal-stagger.in-view > *:nth-child(3){ transition-delay:.17s; }
+  .reveal-stagger.in-view > *:nth-child(4){ transition-delay:.23s; }
+  .reveal-stagger.in-view > *:nth-child(5){ transition-delay:.29s; }
+  .reveal-stagger.in-view > *:nth-child(6){ transition-delay:.35s; }
+  .reveal-stagger.in-view > *:nth-child(7){ transition-delay:.41s; }
+  .reveal-stagger.in-view > *:nth-child(8){ transition-delay:.47s; }
+
+  .hero-load{ opacity:0; transform:translateY(14px); animation:heroIn .7s ease forwards; }
+  .hero-load.d1{ animation-delay:.05s; }
+  .hero-load.d2{ animation-delay:.15s; }
+  .hero-load.d3{ animation-delay:.25s; }
+  .hero-load.d4{ animation-delay:.35s; }
+  .hero-load.d5{ animation-delay:.45s; }
+  @keyframes heroIn{ to{ opacity:1; transform:translateY(0); } }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+    .reveal, .reveal-stagger > *, .hero-load{ opacity:1 !important; transform:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <svg class="logo-mark" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+        <path d="M64,50 C60,32 78,16 100,16 C122,16 140,32 136,50 C133,62 122,55 112,58 C104,60 100,68 100,68 C100,68 96,60 88,58 C78,55 67,62 64,50 Z M66,55 C50,66 44,90 50,118 C55,146 66,172 76,196 C80,206 90,204 90,188 C90,158 84,126 80,98 C77,80 74,64 66,55 Z M134,55 C150,66 158,92 152,122 C146,152 132,182 118,204 C113,212 104,208 105,192 C107,160 116,126 122,96 C126,78 128,64 134,55 Z" fill="#fff" stroke="var(--mint)" stroke-width="6"/>
+        <path d="M84,82 q4,-6 8,0 M108,82 q4,-6 8,0" fill="none" stroke="var(--mint)" stroke-width="4" stroke-linecap="round"/>
+        <path d="M82,100 Q100,116 118,100" fill="none" stroke="var(--mint)" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">
+        <strong>Goodcare Dental</strong>
+        <span>PJ · Mayang Plaza</span>
+      </span>
+    </a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#doctors">Dentists</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#location">Location</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+601110628168" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call
+      </a>
+      <a href="https://wa.me/601110628168?text=Hi%20Goodcare%20Dental%20PJ%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.13h.02a8.94 8.94 0 0 0 6.53-15.53zM12.05 19.5a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.8.97.94-2.73-.18-.28a7.44 7.44 0 1 1 13.85-3.85 7.4 7.4 0 0 1-7.76 7.09zm4.1-5.57c-.22-.11-1.3-.64-1.5-.72s-.35-.11-.5.11-.58.72-.7.86-.26.16-.48.05a6.1 6.1 0 0 1-1.8-1.11 6.7 6.7 0 0 1-1.24-1.55c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.65s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86c0 1.1.8 2.16.91 2.31s1.58 2.41 3.83 3.38a12.9 12.9 0 0 0 1.28.47 3.08 3.08 0 0 0 1.41.09c.43-.06 1.3-.53 1.48-1.05s.19-.96.13-1.05-.2-.15-.42-.26z"/></svg>
+        Book Now
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow-badge hero-load d1">
+        <span class="pip">✓</span>
+        <span class="stars">★★★★★</span>
+        100% recommended on Facebook
+      </div>
+      <h1 class="hero-load d2">Good care isn't just our name, it's how we treat every patient.</h1>
+      <p class="lead hero-load d3">General dentistry, braces and implants in a newly renovated clinic at Mayang Plaza, PJ, open daily including nights.</p>
+      <div class="cta-row hero-load d4">
+        <a href="https://wa.me/601110628168?text=Hi%20Goodcare%20Dental%20PJ%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.13h.02a8.94 8.94 0 0 0 6.53-15.53zM12.05 19.5a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.8.97.94-2.73-.18-.28a7.44 7.44 0 1 1 13.85-3.85 7.4 7.4 0 0 1-7.76 7.09zm4.1-5.57c-.22-.11-1.3-.64-1.5-.72s-.35-.11-.5.11-.58.72-.7.86-.26.16-.48.05a6.1 6.1 0 0 1-1.8-1.11 6.7 6.7 0 0 1-1.24-1.55c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.65s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86c0 1.1.8 2.16.91 2.31s1.58 2.41 3.83 3.38a12.9 12.9 0 0 0 1.28.47 3.08 3.08 0 0 0 1.41.09c.43-.06 1.3-.53 1.48-1.05s.19-.96.13-1.05-.2-.15-.42-.26z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a href="tel:+601110628168" class="btn btn-ghost">Call +60 11-1062 8168</a>
+      </div>
+      <div class="micro-note hero-load d5">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Open Mon–Sat until 9pm, Sun until 8pm
+      </div>
+    </div>
+
+    <div class="hero-load d3">
+      <div class="hero-photo">
+        <img src="assets/clinic.jpg" alt="Goodcare Dental PJ clinic interior" width="1400" height="1750" loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="wrap">
+    <div class="trust-item">
+      <div class="num" data-count="100">0</div>
+      <div class="lbl">% recommended (Facebook)</div>
+    </div>
+    <div class="trust-item">
+      <div class="num">★★★★★</div>
+      <div class="lbl">5.0 average on Google</div>
+    </div>
+    <div class="trust-item">
+      <div class="num">9PM</div>
+      <div class="lbl">Open daily, including nights</div>
+    </div>
+    <div class="trust-item">
+      <div class="num">💬</div>
+      <div class="lbl">Book instantly on WhatsApp</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <h2>A newly renovated clinic, built around patient comfort.</h2>
+      </div>
+      <div class="about-copy" style="margin-top:22px;">
+        <p>Tucked into Mayang Plaza in Taman Mayang Jaya, Goodcare Dental PJ has quickly built a reputation for exactly what its name promises. Patients consistently mention the clean, modern space and the fact that both dentists take the time to explain every step, before and after treatment.</p>
+        <p>It's also one of the few clinics in the area open into the evening, every single day, so a late finish at work or a weekend toothache doesn't mean waiting days for an appointment.</p>
+      </div>
+      <div class="locate-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        1B-1, Jalan SS26/9, Mayang Plaza, Taman Mayang Jaya, 47301 Petaling Jaya, Selangor
+      </div>
+    </div>
+
+    <div class="feature-grid reveal">
+      <div class="feature-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h4>Painless, gentle technique</h4>
+        <p>Patients repeatedly mention feeling no pain, even during extractions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h4>Open until 9pm daily</h4>
+        <p>Evening and weekend slots, no need to take time off work.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <h4>Newly renovated space</h4>
+        <p>A clean, modern clinic patients describe as calming, not clinical.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <h4>Book straight on WhatsApp</h4>
+        <p>No phone tag, message anytime and get a real reply.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <h2>Dental care for the whole family</h2>
+      <p>From routine scaling to braces and implants, all under one roof at Mayang Plaza.</p>
+    </div>
+
+    <div class="services-grid reveal-stagger">
+      <div class="service-tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h4>Check-up &amp; Scaling</h4>
+        <p>Thorough cleaning, done quickly without cutting corners.</p>
+      </div>
+      <div class="service-tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 1 16 0"/><path d="M4 12v3a2 2 0 0 0 2 2h1M20 12v3a2 2 0 0 1-2 2h-1"/></svg></div>
+        <h4>Braces</h4>
+        <p>Orthodontic treatment for teens and adults.</p>
+      </div>
+      <div class="service-tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="14" rx="3"/><path d="M8 20h8M12 16v6"/></svg></div>
+        <h4>Dental Implants</h4>
+        <p>Permanent, natural-looking replacements for missing teeth.</p>
+      </div>
+      <div class="service-tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        <h4>Teeth Whitening</h4>
+        <p>Brighten your smile with dentist-guided treatment.</p>
+      </div>
+      <div class="service-tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h4>Root Canal Treatment</h4>
+        <p>Save an infected tooth and relieve the pain, gently.</p>
+      </div>
+      <div class="service-tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-6 0v4"/><path d="M5 9h14l-1.5 9.5A3 3 0 0 1 14.5 21h-5a3 3 0 0 1-3-2.5L5 9z"/></svg></div>
+        <h4>Tooth Extraction</h4>
+        <p>Painless extractions, including for children.</p>
+      </div>
+      <div class="service-tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20l9-9-9-9-9 9 9 9z"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <h4>Fillings &amp; Restorations</h4>
+        <p>Comfortable treatment for cavities and worn teeth.</p>
+      </div>
+      <div class="service-tile">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9M19.1 4.9c3.9 3.9 3.9 10.2 0 14.2M7.8 16.2a6 6 0 0 1 0-8.5M16.2 7.8a6 6 0 0 1 0 8.5"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg></div>
+        <h4>Evening Emergencies</h4>
+        <p>Open late daily, message us for the next available slot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doctors" id="doctors">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Meet the dentists</h2>
+      <p>Two dentists, two treatment rooms, the same gentle approach patients keep coming back for.</p>
+    </div>
+
+    <div class="doctor-grid reveal">
+      <div class="doctor-card">
+        <div class="doctor-avatar">TK</div>
+        <h3>Dr. Teo Kee Khing</h3>
+        <div class="role">Bachelor of Dental Surgery</div>
+        <p class="bio">Patients describe Dr. Teo as delicate and precise, with a calm chairside manner that puts even nervous patients at ease during scaling, fillings and extractions.</p>
+        <div class="doctor-tags">
+          <span>General Dentistry</span>
+          <span>Extractions</span>
+          <span>Restorative Care</span>
+        </div>
+      </div>
+      <div class="doctor-card">
+        <div class="doctor-avatar">AL</div>
+        <h3>Dr. April Lim Zhi Xin</h3>
+        <div class="role">Bachelor of Dental Surgery</div>
+        <p class="bio">Known for taking the time to explain pre and post treatment care clearly, Dr. April is especially popular with parents bringing children in for check-ups and scaling.</p>
+        <div class="doctor-tags">
+          <span>Family Patients</span>
+          <span>Preventive Care</span>
+          <span>Braces</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <h2>What patients are saying</h2>
+      <p>100% recommended on Facebook, and a growing run of 5-star reviews on Google, a few recurring themes below.</p>
+    </div>
+
+    <div class="review-grid reveal-stagger">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>Beautiful, newly renovated office with friendly staff. Being able to book through WhatsApp instead of only phone calls made this so much easier.</p>
+        <div class="review-who"><span class="dot">SL</span> Sze Ling H.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>Felt no pain at all during my visit. Both the dentist and staff were exceptionally friendly and made me feel comfortable the whole time.</p>
+        <div class="review-who"><span class="dot">TN</span> Thanuja N.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>The dentist explained everything to me and my kids clearly before we went ahead with scaling. Gentle and patient with children too.</p>
+        <div class="review-who"><span class="dot">MM</span> Michele M.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>Both my kids had teeth extracted here and barely noticed. Friendly, soft spoken dentists who clearly know what they're doing.</p>
+        <div class="review-who"><span class="dot">NO</span> NextDoor O.</div>
+      </div>
+    </div>
+
+    <div class="review-source reveal">
+      <a href="https://wa.me/601110628168" target="_blank">See more reviews on Google →</a>
+    </div>
+  </div>
+</section>
+
+<section class="location" id="location">
+  <div class="wrap">
+    <div class="loc-card reveal">
+      <div>
+        <h3>Find us at Mayang Plaza</h3>
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><strong>Address</strong>1B-1, Jalan SS26/9, Mayang Plaza, Taman Mayang Jaya, 47301 Petaling Jaya, Selangor</div>
+        </div>
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div><strong>Phone / WhatsApp</strong>+60 11-1062 8168</div>
+        </div>
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div><strong>Hours</strong>Mon–Sat 9:00am to 9:00pm, Sun 9:00am to 8:00pm</div>
+        </div>
+      </div>
+      <a href="https://wa.me/601110628168?text=Hi%20Goodcare%20Dental%20PJ%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-primary" style="margin-top:28px; justify-content:center;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.13h.02a8.94 8.94 0 0 0 6.53-15.53zM12.05 19.5a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.8.97.94-2.73-.18-.28a7.44 7.44 0 1 1 13.85-3.85 7.4 7.4 0 0 1-7.76 7.09z"/></svg>
+        Book on WhatsApp
+      </a>
+    </div>
+    <div class="map-frame reveal">
+      <iframe src="https://www.google.com/maps?q=1B-1,+Jalan+SS26/9,+Mayang+Plaza,+Taman+Mayang+Jaya,+47301+Petaling+Jaya,+Selangor&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap reveal">
+    <h2>Toothache tonight? We're probably still open.</h2>
+    <p>Message us on WhatsApp, no forms, no hold music, just a real reply from the clinic.</p>
+    <div class="cta-row">
+      <a href="https://wa.me/601110628168?text=Hi%20Goodcare%20Dental%20PJ%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-light">
+        <svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.13h.02a8.94 8.94 0 0 0 6.53-15.53zM12.05 19.5a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.8.97.94-2.73-.18-.28a7.44 7.44 0 1 1 13.85-3.85 7.4 7.4 0 0 1-7.76 7.09z"/></svg>
+        Message on WhatsApp
+      </a>
+      <a href="tel:+601110628168" class="btn btn-ghost">Call +60 11-1062 8168</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="logo">
+        <svg class="logo-mark" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+          <path d="M64,50 C60,32 78,16 100,16 C122,16 140,32 136,50 C133,62 122,55 112,58 C104,60 100,68 100,68 C100,68 96,60 88,58 C78,55 67,62 64,50 Z M66,55 C50,66 44,90 50,118 C55,146 66,172 76,196 C80,206 90,204 90,188 C90,158 84,126 80,98 C77,80 74,64 66,55 Z M134,55 C150,66 158,92 152,122 C146,152 132,182 118,204 C113,212 104,208 105,192 C107,160 116,126 122,96 C126,78 128,64 134,55 Z" fill="#fff" stroke="var(--mint)" stroke-width="6"/>
+          <path d="M84,82 q4,-6 8,0 M108,82 q4,-6 8,0" fill="none" stroke="var(--mint)" stroke-width="4" stroke-linecap="round"/>
+          <path d="M82,100 Q100,116 118,100" fill="none" stroke="var(--mint)" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">
+          <strong>Goodcare Dental PJ</strong>
+          <span>Taman Mayang Jaya, Petaling Jaya</span>
+        </span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#doctors">Dentists</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Goodcare Dental PJ. All rights reserved.</span>
+      <span>1B-1, Jalan SS26/9, Mayang Plaza, Taman Mayang Jaya, 47301 Petaling Jaya, Selangor</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/601110628168?text=Hi%20Goodcare%20Dental%20PJ%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="float-wa" aria-label="Book on WhatsApp">
+  <div class="ring"></div>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.13h.02a8.94 8.94 0 0 0 6.53-15.53zM12.05 19.5a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.8.97.94-2.73-.18-.28a7.44 7.44 0 1 1 13.85-3.85 7.4 7.4 0 0 1-7.76 7.09zm4.1-5.57c-.22-.11-1.3-.64-1.5-.72s-.35-.11-.5.11-.58.72-.7.86-.26.16-.48.05a6.1 6.1 0 0 1-1.8-1.11 6.7 6.7 0 0 1-1.24-1.55c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.65s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86c0 1.1.8 2.16.91 2.31s1.58 2.41 3.83 3.38a12.9 12.9 0 0 0 1.28.47 3.08 3.08 0 0 0 1.41.09c.43-.06 1.3-.53 1.48-1.05s.19-.96.13-1.05-.2-.15-.42-.26z"/></svg>
+</a>
+
+<script>
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 12);
+  });
+
+  const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => io.observe(el));
+
+  const counters = document.querySelectorAll('[data-count]');
+  const countIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseFloat(el.getAttribute('data-count'));
+      const duration = 1200;
+      const start = performance.now();
+      function tick(now){
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const val = target * eased;
+        el.textContent = Math.round(val);
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      countIO.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  counters.forEach(el => countIO.observe(el));
+</script>
+
+</body>
+</html>
